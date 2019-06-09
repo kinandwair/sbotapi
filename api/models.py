@@ -1,0 +1,47 @@
+from django.db import models
+
+
+# Create your models here.
+class Property(models.Model):
+    # title = models.CharField(max_length=250)
+    city = models.CharField(max_length=250)
+    area = models.TextField()
+    price = models.FloatField()
+    posting_date = models.DateField()
+    action = models.TextField()
+    ad_title=models.TextField()
+    add_link = models.TextField()
+    bedrooms=models.IntegerField()
+    ad_images=models.TextField()
+    ad_link = models.TextField()
+    amenities = models.TextField()
+    bathrooms = models.IntegerField()
+    # body = models.TextField()
+    building=models.TextField()
+    category=models.TextField()
+    # color=models.TextField()
+    country=models.TextField()
+    size=models.FloatField()
+    creating_date_time=models.TextField()
+    # coordinates=models.GeoPointField()
+    source=models.TextField()
+    trade_name=models.TextField()
+    type=models.TextField()
+    description=models.TextField()
+    master_property_type=models.TextField()
+    phone = models.TextField()
+    ded_license_number = models.TextField()
+    creating_date= models.DateField()
+    didExceptionHappenDuringExtractingItems=models.BooleanField()
+    furnished = models.TextField()
+    master_furnished = models.TextField()
+    rera_registration_number = models.TextField()
+    subarea =models.TextField()
+    master_payment_type=models.TextField()
+    property_reference=models.TextField()
+    payment_type=models.TextField()
+    # action=models.TextField()
+    # posting_date=models.TextField()
+
+    def __str__(self):
+        return self.title
