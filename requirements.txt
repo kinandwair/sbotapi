@@ -1,6 +1,7 @@
 Django==1.9.8
 dj-database-url==0.3.0
 django_elasticsearch_dsl
+rest_framework
 dj-static==0.0.6
 gunicorn==19.6.0
 Unipath==1.0
